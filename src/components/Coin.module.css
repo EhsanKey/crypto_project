@@ -12,6 +12,13 @@
 .container:last-child {
     border: none;
 }
+.deviceMobail {
+    display: contents;
+}
+
+.deviceMobail div {
+    display: contents;
+}
 
 .image {
     width: 30px;
@@ -56,36 +63,44 @@
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding: 15px 5px;
+    }
 
-        .container {
-            padding: 10px 10px;
-            font-size: 10px; 
-        }
+    .name {
+        margin-left: 0px;
+        text-align: center;
+    }
 
-        .image {
-            width: 30px;
-            font-size: 10px;
-        }
-        
-        .name{
-            width: 80px;
-            margin-left: 10px;
-        }
-        
-        .symbol {
-            width: 70px;
-        }
-        
-        .currentPrice {
-            width: 70px;
-          }
+    .symbol {
+        text-align: center;
+        width: 70px;
+    }
 
-        .marketCap {
-            width: 80px;
-        }
-        
-        .greenPriceChange,
-        .redPriceChange {
-            width: 70px;
-        }
+    .currentPrice {
+        width: 70px;
+    }
+
+    .greenPriceChange,
+    .redPriceChange {
+        width: 70px;
+    }
+
+    .deviceMobail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    
+    .deviceMobail div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px;
+        width: fit-content;
+    }
 }
