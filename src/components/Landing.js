@@ -37,7 +37,6 @@ const Landing = () => {
             <input type="text" placeholder='Search' value={search} onChange={searchHandler} />
             {
                 coins.length ? 
-                
                     <div className={Styles.container}>
                         {
                             searchedCoins.map(coin => <Coin 

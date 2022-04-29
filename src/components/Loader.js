@@ -1,13 +1,13 @@
 import React from 'react';
 
 //Gif
-import Spinner from "../gif/spinner.gif"
+import Styles from "./Loader.module.css"
 
 const Loader = () => {
     return (
-        <div>
-            <img src={Spinner} alt="Loading" />
-            <h2>Loading . . .</h2>
+        <div className={Styles.container}>
+            <div class={Styles.loader}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
         </div>
     );
 };
